@@ -321,6 +321,12 @@ footer a {
 /* Media Query for Desktop Viewport */
 
 @media screen and (min-width: 769px), print {
+    nav li {
+        border-right: 1px solid #e5e9fc;
+    }
+    nav li:last-child {
+        border-right: none;
+    }
     /* Desktop Viewport: Style rule for header */
     header {
         padding: 2%;
@@ -381,7 +387,6 @@ footer a {
         display: block;
         padding-top: 3%;
     }
-
     /* .class {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
