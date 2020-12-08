@@ -146,16 +146,33 @@ footer a {
 
 @media only screen and (max-width:767px) {
     /* Style rules for mobile viewport */
-    nav li {
+    .mobile-nav a {
+        color: #fff;
+        text-align: center;
+        font-size: 2em;
+        text-decoration: none;
+        padding: 3%;
         display: block;
-        border-top: 1px solid #e5e9fc;
+    }
+    .mobile-nav a.menu-icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .menu-icon div {
+        height: 50px;
+        width: 50px;
+        background-color: #373684;
     }
     /* Hide tab-desk class */
-    .tab-desk {
+    .tab-desk, #menu-links {
         display: none;
     }
-    header {
-        font-size: 1.5em;
+    h1 {
+        font-size: 0.75em;
+        padding: 4%;
+        margin-right: 15%;
     }
     /* Style rules for table */
     table {
@@ -235,12 +252,14 @@ footer a {
         display: block;
         font-size: 0.75em;
     }
-    .mobile {
-        display: none;
-    }
     /* Tablet Viewport: Style rule for header content */
     span.tab-desk {
         display: inline;
+    }
+    header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
     }
     /* Tablet Viewport: Style rules for nav area */
     nav li {
@@ -254,6 +273,9 @@ footer a {
     }
     nav li a {
         padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    .mobile, .mobile-nav {
+        display: none;
     }
     /* Tablet Viewport: Style rule for map */
     .map {
@@ -348,6 +370,12 @@ footer a {
     nav li:last-child {
         border-right: none;
     }
+    nav li a:hover {
+        transform: scale(1.2);
+    }
+    .mobile, .mobile-nav {
+        display: none;
+    }
     /* Desktop Viewport: Style rule for header */
     header {
         padding: 2%;
@@ -391,8 +419,6 @@ footer a {
     /* Desktop Viewport: Style rules for form elements */
     .form-grid {
         display: grid;
-
-
     }
     .btn {
         grid-column: 1 /span 2;
@@ -408,10 +434,10 @@ footer a {
     }
     .grid {
         display: grid;
-        grid-template-columns: 24% 24% 24% 24%;       
+        grid-template-columns: 24% 24% 24% 24%;
         grid-gap: 20px;
         margin: auto;
-        }
+    }
     aside {
         grid-column: 1 / span 4;
         text-align: center;
