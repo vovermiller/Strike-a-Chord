@@ -5,7 +5,7 @@
     <!-- 
     Student Name: Vashti Overmiller
     File Name: rentals.html
-    Date: 11/19S/2020 
+    Date: 12/8/2020
  -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -20,9 +20,20 @@
 
 <body>
     <header>
-        <h1><span class="tab-desk">&#9836; Strike a Chord &#9836;</span></h1>
+        <h1><span class="tab-desk">&#9836;</span> Strike a Chord <span class="tab-desk">&#9836;</span></h1>
     </header>
-    <nav>
+    <!-- Mobile nav -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()"><div>&#9776;</div></a>
+    </nav>
+    <nav class="tab-desk">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="lessons.html">Lessons</a></li>
@@ -81,6 +92,7 @@
         <p>&copy; Copyright 2021. All Rights Reserved. </p>
         <a href="mailto:lessons@strikeachord.net">lessons@strikeachord.net</a>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
