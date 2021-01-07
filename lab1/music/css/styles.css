@@ -242,6 +242,10 @@ footer a {
         font-size: 1.5em;
         font-weight: bold;
     }
+    .social img{
+        display: inline-block;
+        padding: 4%;
+    }
 }
 
 /* Media Query for Tablet Viewport*/
@@ -359,6 +363,16 @@ footer a {
         font-size: 1.5em;
         font-weight: bold;
     }
+    .copyright{
+        float: left;
+        width: 65%;
+    }
+    .social img{
+        float: right;
+        width: 5%;
+        margin-right: 2%;
+        margin-top: 0.5%;
+    }
 }
 
 /* Media Query for Desktop Viewport */
@@ -463,6 +477,17 @@ footer a {
         font-family: Verdana, Arial, sans-serif;
         font-size: 1em;
         font-weight: bold;
+    }
+    .copyright{
+        float: left;
+        width: 65%;
+    }
+    .social img{
+        float: right;
+        width: 3%;
+        margin-right: 2%;
+        margin-top: 0.5%;
+        margin-bottom: 0.5%;
     }
 }
 
